@@ -1,0 +1,10 @@
+.mvn/
+.mvnw.*
+*.class
+.settings/
+.project
+.classpath
+hs_err_pid*
+.idea/
+*.iml
+/target/
