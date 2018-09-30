@@ -8,6 +8,9 @@ public class MainApp {
 	public static void main(String[] args) throws FormatMapException {
 		Scanner sc = new Scanner(System.in);
 		try {
+			System.out.println("Please select the path of Dungeon map input file :");
+			String inputPath = sc.nextLine();
+			
 			System.out.println("Please select how to play the game ");
 			System.out.println("1 Minimum ");
 			System.out.println("2 Normal ");
@@ -15,14 +18,14 @@ public class MainApp {
 			System.out.println("your choice for the game: ");
 			
 			int gameToPlay = sc.nextInt();
-			play(gameToPlay);
+			play(gameToPlay, inputPath);
 		} finally {
 			sc.close();
 		}
 	}
 
-	private static void play(int gameToPlay) throws FormatMapException {
-		DungeonMap dungeonMap = new DungeonMap("data.txt");
+	private static void play(int gameToPlay, String inputPath) throws FormatMapException {
+		DungeonMap dungeonMap = new DungeonMap(inputPath);
 		switch (gameToPlay) {
 		case 1:
 			dungeonMap.playMinimum();

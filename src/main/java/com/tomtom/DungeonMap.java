@@ -20,7 +20,7 @@ public class DungeonMap {
 
 	private int[][] indexMap;
 	private int[][] graph;
-
+  
 	private List<String[]> namesMap = new ArrayList<>();
 
 	private int currentRoomIndex = 0;// starting room
