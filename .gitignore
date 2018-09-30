@@ -9,4 +9,3 @@ hs_err_pid*
 *.iml
 target/*
 !target/crawling-game-1.0.jar
-/target/
